@@ -2,6 +2,12 @@
 // weight, and a live spot price. Pure, dependency-free math — the same engine
 // behind the GoldGramPrice live gold calculator at https://goldgramprice.com/.
 //
+// Purity here is the exact karat/24 ratio, so Purity(14) is 0.58333. Dealers
+// usually quote the rounded trade values instead (14k as 0.585, 18k as 0.75),
+// and the per-troy-ounce to per-gram step that turns a spot quote into a melt
+// figure is worked through line by line at
+// https://goldgramprice.com/learn/how-to-calculate-gold-value-by-karat/.
+//
 // Quick example:
 //
 //	spotPerOz := 3983.30           // USD per troy ounce

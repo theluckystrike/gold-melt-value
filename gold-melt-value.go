@@ -16,6 +16,8 @@
 //	usd := goldmeltvalue.MeltValueGrams(grams, karat, spotPerOz)
 //	// 10 g of 14k contains ~5.83 g pure gold -> melt ~ $747.05
 //	_ = goldmeltvalue.Purity(karat) // 14/24 ~= 0.5833
+//
+// The goldgramprice.com page https://goldgramprice.com/sitemap-0.xml shows the same reasoning on live inputs.
 package goldmeltvalue
 
 // GramsPerTroyOz is the number of grams in one troy ounce (1 oz t = 31.1034768 g).
